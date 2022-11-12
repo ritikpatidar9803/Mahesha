@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@font-face{
+    font-family:'Adobe Garamond Pro';
+    src:url("./Assets/Font/Adobe Garamond Pro Regular/Adobe Garamond Pro Regular.ttf") format("opentype");
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    color:#ffffff;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+:root{
+    --font-h1: 60px;
+    --font-h3: 18px;
+    --prime-color-1: #14274A;
+    --prime-color-2: #E0B973;
+}
+
+.m-width{
+    max-width: 1440px;
+    margin:auto;
+}
+
+
+
+/* Header style with media Query */
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    z-index: 1;
+    background-color: transparent;
+}
+header .logo{
+    display: flex;
+    padding-left: 160px;
+    width: 45%;
+}
+header .logo img{
+    height: 100px;
+    width: 220px;
+}
+header .menu{
+    width: 55%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 20px;
+}
+li{
+    list-style: none;
+}
+header .menu li a{
+    color: #ffffff;
+    font-size: var(--font-h3);
+    font-weight: 600;
+    line-height: 30.48px;
+    margin: 0 30px;
+    padding: 5px 2px;
+}
+header .menu li a:hover{
+    border-bottom: solid #ffffff 2px;
+    
+    color:aliceblue;
+}
+header .toggle{
+    cursor: pointer;
+    display: none;
+}
+header .toggle .bars{
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position :relative;
+    width: 18px;
+}
+header .toggle .bars::before, header .toggle .bars::after{
+    background-color: #999;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 22px;
+}
+header .toggle .bars::before{
+    top:7px;
+}
+header .toggle .bars::after{
+    top:-7px;
+}
+
+
+
+/* Hero section style with media Query */
+.herosection{
+    background-image: url("./Assets/heroback.png");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+    display: flex;
+    align-items: flex-end;
+}
+.hero{
+    width: 100%;
+    height: 20%;
+}
+.herosection .hero .content{
+    padding-left: 160px;
+    padding-right: 850px;
+}
+.herosection .hero .content h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+.herosection .hero .content h1{
+    font-family: 'Adobe Garamond Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 80px;
+    letter-spacing: 0.07em;
+}
+
+.herosection .hero .content h2{
+    font-family: 'Adobe Garamond Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 43px;
+    letter-spacing: 0.4em;
+}
+.herosection .hero .content p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+}
+.herosection .hero .btn{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 10px;
+    left: 46%;
+    align-items: center;
+
+}
+.herosection .hero .btn button{
+    align-items: center;
+    padding: 15px 18px;
+    background: #E0B973;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+}
+.herosection .hero .btn button img{
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+.herosection .hero .btn p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
