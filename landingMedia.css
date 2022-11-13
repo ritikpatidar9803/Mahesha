@@ -1,0 +1,176 @@
+@media all and (max-width:450px) {
+
+    p {
+        font-size: 9px;
+        line-height: 21px;
+        letter-spacing: 0.05em;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 43px;
+        letter-spacing: 0.05em;
+        color: var(--prime-color-2);
+    }
+
+    h1,
+    h2 {
+        font-family: 'Adobe Garamond Pro';
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .lr_padding {
+        padding: 20px;
+    }
+
+    .pad {
+        padding: 20px 40px;
+    }
+
+    button {
+        margin-top: 10px;
+        width: fit-content;
+        padding: 6px 11px;
+        background: var(--prime-color-2);
+        border: 0px;
+        border-radius: 5px;
+        font-size: 9px;
+        line-height: 15px;
+        font-weight: 700;
+    }
+
+    header .logo {
+        display: flex;
+        width: 45%;
+    }
+
+    header .logo div {
+        padding: 20px 10px 10px 10px;
+        background-color: #ffffff;
+        border-radius: 30px;
+        margin-top: -35px;
+        margin-left: 20px;
+    }
+
+    header .logo div img {
+        height: 40px;
+        width: 90px;
+    }
+
+    header .toggle {
+        display: block;
+        margin-top: -35px;
+    }
+
+    header .menu {
+        position: absolute;
+        text-align: center;
+        display: none;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+    }
+
+    header .menu.active,
+    nav .btn.active {
+        display: block;
+    }
+
+    header li {
+        padding: 10px 0;
+    }
+
+    .herosection {
+        background-position: right;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .herosection .hero .content {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+
+    .herosection .hero .content h3 {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .herosection .hero .content h1 {
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0.07em;
+    }
+
+    .herosection .hero .content h2 {
+        color: #FFFFFF;
+    }
+
+    .herosection .hero .content p {
+        letter-spacing: 0.1em;
+    }
+
+    .herosection .hero .btn button img {
+        margin-right: 15px;
+    }
+
+    .herosection .hero .btn {
+        left: 40%;
+        bottom: 35px;
+    }
+
+    .about .container .content h2 {
+        font-size: 9px;
+        line-height: 15px;
+    }
+
+    .about .container .content p {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .booking .content .form {
+        flex-direction: column;
+        column-width: 50%;
+    }
+
+    .facilities {
+        padding: 0px;
+    }
+    
+    .facilities .facilitybox .facility .face_icon i,
+    span {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .facilities .facilitybox .facility {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .booking .content .form .items {
+        margin-top: 9px;
+    }
+
+    .booking .content .form .items i {
+        font-size: 12px;
+    }
+
+    .booking .content .form .items span {
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .booking .content .form .items select,
+    input {
+        margin-top: 5px;
+        padding: 5px 10px;
+        height: 30px;
+        width: 100%;
+        font-size: 9px;
+    }
+}

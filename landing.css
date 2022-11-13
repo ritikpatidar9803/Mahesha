@@ -9,24 +9,55 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
     scroll-behavior: smooth;
-    color:#ffffff;
+    color:#FFFFFF ;
     font-family: 'Montserrat';
     font-style: normal;
+    font-weight: 400;
 }
 
 :root{
-    --font-h1: 60px;
-    --font-h3: 18px;
     --prime-color-1: #14274A;
     --prime-color-2: #E0B973;
 }
-
+p{
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+}
+h2{
+    font-size: 48px;
+    line-height: 43px;
+    letter-spacing: 0.05em;
+    color: var(--prime-color-2);
+}
+h1,h2{
+    font-family: 'Adobe Garamond Pro';
+    font-style: normal;
+    font-weight: 700;
+}
 .m-width{
     max-width: 1440px;
     margin:auto;
 }
-
+.lr_padding{
+    padding: 0px 121px;
+}
+.pad{
+    padding: 76px 121px;
+}
+button{
+    margin-top: 30px;
+    width: fit-content;
+    padding: 15px 18px;
+    background: var(--prime-color-2);
+    border: 0px;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+}
 
 
 /* Header style with media Query */
@@ -37,7 +68,6 @@ header{
     justify-content: space-between; 
     z-index: 1;
     background-color: transparent;
-    padding: 0px 121px;
 }
 header .logo{
     display: flex;
@@ -53,19 +83,15 @@ header .logo div img{
     height: 85px;
     width: 180px;
 }
-
 header .menu{
     width: 55%;
     display: flex;
     justify-content: flex-end;
     padding: 0 20px;
 }
-li{
-    list-style: none;
-}
 header .menu li a{
     color: #ffffff;
-    font-size: var(--font-h3);
+    font-size: 18px;
     font-weight: 600;
     line-height: 30.48px;
     margin: 0 30px;
@@ -73,22 +99,21 @@ header .menu li a{
 }
 header .menu li a:hover{
     border-bottom: solid #ffffff 2px;
-    
-    color:aliceblue;
+    color:#FFFFFF;
 }
 header .toggle{
     cursor: pointer;
     display: none;
 }
 header .toggle .bars{
-    background: #999;
+    background: #FFFFFF;
     display: inline-block;
     height: 2px;
     position :relative;
     width: 18px;
 }
 header .toggle .bars::before, header .toggle .bars::after{
-    background-color: #999;
+    background-color: #FFFFFF;
     content: "";
     display: inline-block;
     height: 2px;
@@ -101,7 +126,6 @@ header .toggle .bars::before{
 header .toggle .bars::after{
     top:-7px;
 }
-
 
 
 /* Hero section style with media Query */
@@ -120,36 +144,22 @@ header .toggle .bars::after{
     width: 100%;
 }
 .herosection .hero .content{
-    padding-left: 121px;
     width:40%;
     margin-bottom: 20px;
 }
 .herosection .hero .content h3{
-    font-weight: 400;
     font-size: 32px;
     line-height: 30px;
 }
 .herosection .hero .content h1{
-    font-family: 'Adobe Garamond Pro';
-    font-style: normal;
-    font-weight: 700;
     font-size: 90px;
     line-height: 80px;
     letter-spacing: 0.07em;
 }
-
 .herosection .hero .content h2{
-    font-family: 'Adobe Garamond Pro';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 43px;
-    letter-spacing: 0.4em;
+    color: #FFFFFF;
 }
 .herosection .hero .content p{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
     letter-spacing: 0.1em;
 }
 .herosection .hero .btn{
@@ -160,25 +170,10 @@ header .toggle .bars::after{
     left: 46%;
     align-items: center;
 }
-.herosection .hero .btn button{
-    padding: 15px 18px;
-    background: #E0B973;
-    border: 0px;
-    border-radius: 5px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-}
 .herosection .hero .btn button img{
-    width: 15px;
-    height: 15px;
     margin-right: 15px;
 }
 .herosection .hero .btn p{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: 0.05em;
     margin-top: 30px;
     margin-bottom: 15px;
 }
@@ -188,8 +183,6 @@ header .toggle .bars::after{
 .about{
     width: 100%;
     height:max-content;
-    padding: 76px 121px 76px 121px;
-    
 }
 .about .container{
     display: grid;
@@ -201,65 +194,34 @@ header .toggle .bars::after{
     flex-direction: column;
     justify-content: space-between;
 }
-.about .container .content h4{
-    font-family: 'Adobe Garamond Pro';
-    font-style: normal;
-    font-weight: 700;
+.about .container .content h2{
     font-size: 22px;
     line-height: 30px;
-    letter-spacing: 0.05em;
-    color: #E0B973;
 }
 .about .container .content p{
     font-weight: 700;
     font-size: 48px;
     padding-right: 20%;
     line-height: 50px;
-    color: #14274A;
+    color: var(--prime-color-1);
 }
-
 .about .container .image img{
     width: 100%;
     height: 100%;
 }
-.about .container .content button{
-    width: fit-content;
-    padding: 15px 18px;
-    background: #E0B973;
-    border: 0px;
-    border-radius: 5px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-}
 
 /* booking section style with media Query */
 .booking{
-    background-color: #000000;
+    background-color: black;
     height: max-content;
 }
-
-.booking .content{
-    padding: 76px 121px;
-}
-
 .booking .content h2{
-    font-family: 'Adobe Garamond Pro';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 60px;
     text-align: center;
-    letter-spacing: 0.05em;
-    color: #E0B973;
 }
 .booking .content p{
     margin-top: 10px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
     text-align: center;
-    color: #FFFFFF;
+    color: white;
 }
 .booking .content .form{
     display: flex;
@@ -278,7 +240,7 @@ header .toggle .bars::after{
     font-size: 22px;
     line-height: 29px;
     text-align: center;
-    color: #E0B973;
+    color: var(--prime-color-2);
 }
 .booking .content .form .items select,input{
     background: transparent;
@@ -302,7 +264,7 @@ header .toggle .bars::after{
     align-items: flex-end;
 }
 .booking .content .form .btn input{
-    background: #E0B973;
+    background: var(--prime-color-2);
     color: #000000;
     border: 1px solid #000000;
     border-radius: 200px;
@@ -321,29 +283,18 @@ header .toggle .bars::after{
 .facilities .content{
     display: flex;
     flex-direction: column;
-    padding: 0px 230px;
     justify-content: center;
 }
 .facilities .content h2{
-    font-family: 'Adobe Garamond Pro';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 52px;
     text-align: center;
-    letter-spacing: 0.05em;
-    color: #E0B973;
 }
 .facilities .content p{
     margin-top: 10px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
     text-align: center;
-    color: #14274A;
+    color: var(--prime-color-1);
 }
 .facilities .facilitybox{
-    background-color: #E0B973;
+    background-color: var(--prime-color-2);
     margin-top: 30px;
     padding: 30px 0;
 }
@@ -362,36 +313,17 @@ header .toggle .bars::after{
 .facilities .facilitybox .facility .face_icon i,span{
     margin-top: 5px;
     color: #000000;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 30px;
     text-align: center;
 }
 .facilities button{
-    margin-top: 30px;
     align-self: center;
-    width: fit-content;
-    padding: 15px 18px;
     background: #000000;
-    border: 0px;
-    border-radius: 5px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
 }
 
 /* Gallery section style with media Query */
-.gallery{
-    padding: 0px 121px;
-}
-.gallery h2{
-    font-family: 'Adobe Garamond Pro';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 72px;
-    letter-spacing: 0.05em;
-    color: #E0B973;
-}
+
 .gallery .row {
     margin-top: 27px ;
     display: grid;
@@ -447,32 +379,17 @@ header .toggle .bars::after{
     grid-row-start: 9;
     grid-row-end: 13;
 }
-.gallery button{
-    margin-top: 25px;
-    padding: 15px 18px;
-    background: #E0B973;
-    border: 0px;
-    border-radius: 5px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-}
+
 
 /* testimonials section style with media Query */
 .testimonials{
-    padding: 121px;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
 .testimonials h2{
-    font-family: 'Adobe Garamond Pro';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 72px;
-    color: #14274A;
+    color: var(--prime-color-1);
 }
 .testimonials .review{
     margin-top: 26px;
@@ -481,41 +398,26 @@ header .toggle .bars::after{
     align-items: center;
 }
 .testimonials .review p{
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 37px;
-    color: #14274A;
+    color: var(--prime-color-1);
+    margin-top: 19px;
 }
 .testimonials .review span{
-    margin-top: 19px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
-    color: #14274A;
+    font-size: 26px;
+    line-height: 37px;
+    color: var(--prime-color-1);
 }
 .testimonials .btn{
     display: flex;
 }
 .testimonials .btn button{
     margin: 25px 10px;
-    padding: 15px 18px;
-    background: #E0B973;
-    border: 0px;
-    border-radius: 5px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
 }
-
-
 
 /*footer style*/
 footer{
-    
-    background-color: #14274A;
+    background-color: var(--prime-color-1);
     width: 100%;
 }
-
 footer .container{
     padding: 50px 121px;
     display: flex;
@@ -526,7 +428,6 @@ footer .items{
     margin: 10px 0 0 10px;
     flex-grow: 1;
 }
-
 footer .items img{
     height: 74px;
     width: 131px;
@@ -542,57 +443,29 @@ footer .items li{
 footer .items li i{
     margin-right: 10px;
 }
-
 footer .items input{
     background: transparent;
     margin-top: 25px;
-    color: #FFFFFF;
     opacity: 70%;
     padding : 6px 14px;
-    height: 40px;
+    height: 50px;
     width: 80%;
     font-size: 12px;
-    border: 2px solid #E0B973;
+    border: 2px solid var(--prime-color-2);
     border-radius: 5px;
 }
 footer .items button{
-    margin-left: -11px;
-    padding : 6px 14px;
-    background: #E0B973;
-    border: 0px;
-    border-radius: 5px;
-    font-weight: 700;
+    margin: -10px 0px 0px -10px;
     font-size: 12px;
-    height: 40px;
+    height: 50px;
 }
-
 footer .box{
     position: relative;
     height: 100px;
     width: 100px;
-    top: -100px;
-    left: 46%;
+    top: -295px;
+    left: 46.5%;
     z-index: 2;
-    background-color: #14274A;
+    background-color: var(--prime-color-1);
     transform: rotate(45deg);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
