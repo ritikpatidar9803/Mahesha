@@ -118,9 +118,13 @@
 
     .herosection .hero .btn {
         left: 40%;
-        bottom: 35px;
+        bottom: 45px;
     }
 
+    .herosection .hero .btn p {
+        margin-top: 16px;
+        margin-bottom: 4px;
+    }
     .about .container .content h2 {
         font-size: 9px;
         line-height: 15px;
@@ -142,14 +146,16 @@
     
     .facilities .facilitybox .facility .face_icon i,
     span {
-        font-size: 15px;
+        font-size: 9px;
         line-height: 21px;
     }
 
     .facilities .facilitybox .facility {
         display: flex;
-        flex-direction: column;
         padding: 0px;
+    }
+    .facilities .facilitybox .facility .face_icon {
+        padding: 0px 10px;
     }
 
     .booking .content .form .items {
@@ -172,5 +178,8 @@
         height: 30px;
         width: 100%;
         font-size: 9px;
+    }
+    .gallery .row{
+        grid-gap: 7px;
     }
 }
